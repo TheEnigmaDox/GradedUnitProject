@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Campsite
+    uniqueID: 463422711
+    locked: 0
+  - name: Terrain
+    uniqueID: 2062578885
+    locked: 0
+  - name: Water
+    uniqueID: 221075557
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
