@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,553 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 446
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac598765de32f724ba66cdb1b45be12e
+      internalID: 76703075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 446
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abecb4f82d35c742b261d42a11340bc
+      internalID: 301051234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 446
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3855c2eaa3a6634086e9d9392693cef
+      internalID: 17518082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 446
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd9d2d471b888142987c0b2de3924bf
+      internalID: -1234735174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_16
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 446
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fca4407f290a74b870eeb731aaeb70
+      internalID: 2006887307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 430
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c065920e3248b63499c050776a9a0cf4
+      internalID: -1440731644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_30
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 430
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76bd74b8b28f834c9ccb591c9a66b2a
+      internalID: 577088154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 430
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39ebf5307e7a9b47bb2faf1daa3798f
+      internalID: -1485030953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_32
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 430
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7f228fdc89a9f478f1d2b2c25aae1b
+      internalID: 1145681330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_45
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 414
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37637012c6c25e4189052185dfe31e5
+      internalID: 161118276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_46
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 414
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaeda491455208e4f8c0bd44eb988897
+      internalID: 1856726575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_47
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 414
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b454ac069970a41b2d13426b761bbd
+      internalID: -474034120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 414
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d177c3fd04f61b940b24e197f604d696
+      internalID: 2100856766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_61
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 398
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9607132373f26ab43a56725146cd1554
+      internalID: -1239505183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 398
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dabfbdf68ae6249bcd9518834ae0f6
+      internalID: -1607673303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_63
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 398
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4656a8bf06172e94f99ee61655f19223
+      internalID: -1811500822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_64
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 382
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ec95160ce73d44ca036d05dbbd2c9b
+      internalID: -489055520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 382
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6b78df8ad23d146a3d9536a9e53c44
+      internalID: 1526211602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_66
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 382
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2220f91f3332254195316f13cc0e6dc
+      internalID: 551625399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_0
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 144
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333b0b948cacb5143bbfe9fff7a30091
+      internalID: -1084247094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_1
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 143
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5199f730d6938444ba26cffcd7035d00
+      internalID: 1192095059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_2
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 143
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d739076fe4058bf499b9548c2da9fb0e
+      internalID: -252752621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_3
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 271
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52595dab91d37ab4bbf7e03861059afa
+      internalID: -1608078820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 319
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1cbda3e6ea549488003bae195ccad7
+      internalID: 2073409465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_5
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 290
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944db8e9cf527d040867d6cd394c2d87
+      internalID: -2072355671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallBurg_outside_assets_6
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 80
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912bbe4d09e0d3c4e9994964cca64b9e
+      internalID: -1149679811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +665,352 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SmallBurg_outside_assets_0: -1084247094
+      SmallBurg_outside_assets_1: 1192095059
+      SmallBurg_outside_assets_10: 727070819
+      SmallBurg_outside_assets_100: -1106081366
+      SmallBurg_outside_assets_101: -1727719918
+      SmallBurg_outside_assets_102: -1683840907
+      SmallBurg_outside_assets_103: 1064064108
+      SmallBurg_outside_assets_104: -1303585324
+      SmallBurg_outside_assets_105: -245677476
+      SmallBurg_outside_assets_106: 171589789
+      SmallBurg_outside_assets_107: -375829265
+      SmallBurg_outside_assets_108: 1792380925
+      SmallBurg_outside_assets_109: -1888527139
+      SmallBurg_outside_assets_11: 85768721
+      SmallBurg_outside_assets_110: 534678167
+      SmallBurg_outside_assets_111: 1542050600
+      SmallBurg_outside_assets_112: 2137074268
+      SmallBurg_outside_assets_113: 520515387
+      SmallBurg_outside_assets_114: -2037177072
+      SmallBurg_outside_assets_115: -282846688
+      SmallBurg_outside_assets_116: 1693685796
+      SmallBurg_outside_assets_117: -503766846
+      SmallBurg_outside_assets_118: -1141483858
+      SmallBurg_outside_assets_119: 841956225
+      SmallBurg_outside_assets_12: 76703075
+      SmallBurg_outside_assets_120: 1391317160
+      SmallBurg_outside_assets_121: -1365578835
+      SmallBurg_outside_assets_122: 142661427
+      SmallBurg_outside_assets_123: 2037943904
+      SmallBurg_outside_assets_124: 1696414060
+      SmallBurg_outside_assets_125: -1161715063
+      SmallBurg_outside_assets_126: 826263365
+      SmallBurg_outside_assets_127: -1234695870
+      SmallBurg_outside_assets_128: -1237942508
+      SmallBurg_outside_assets_129: 2057999741
+      SmallBurg_outside_assets_13: 301051234
+      SmallBurg_outside_assets_130: 522917257
+      SmallBurg_outside_assets_131: -1338083776
+      SmallBurg_outside_assets_132: 759616789
+      SmallBurg_outside_assets_133: 1927673372
+      SmallBurg_outside_assets_134: 1083148371
+      SmallBurg_outside_assets_135: 936932921
+      SmallBurg_outside_assets_136: -841670857
+      SmallBurg_outside_assets_137: 71379939
+      SmallBurg_outside_assets_138: 1759114648
+      SmallBurg_outside_assets_139: 1842945104
+      SmallBurg_outside_assets_14: 17518082
+      SmallBurg_outside_assets_140: 1215946828
+      SmallBurg_outside_assets_141: 2020727600
+      SmallBurg_outside_assets_142: -487544591
+      SmallBurg_outside_assets_143: 2147041850
+      SmallBurg_outside_assets_144: -2138552778
+      SmallBurg_outside_assets_145: 1960449281
+      SmallBurg_outside_assets_146: 289396035
+      SmallBurg_outside_assets_147: -435580695
+      SmallBurg_outside_assets_148: -176710197
+      SmallBurg_outside_assets_149: -1649933797
+      SmallBurg_outside_assets_15: -1234735174
+      SmallBurg_outside_assets_150: 328964347
+      SmallBurg_outside_assets_151: 1342300650
+      SmallBurg_outside_assets_152: -263012917
+      SmallBurg_outside_assets_153: 544371173
+      SmallBurg_outside_assets_154: -1526531039
+      SmallBurg_outside_assets_155: -1534375284
+      SmallBurg_outside_assets_156: 446644720
+      SmallBurg_outside_assets_157: -386233206
+      SmallBurg_outside_assets_158: 1676618419
+      SmallBurg_outside_assets_159: 224500348
+      SmallBurg_outside_assets_16: 2006887307
+      SmallBurg_outside_assets_160: 925373563
+      SmallBurg_outside_assets_161: 310783186
+      SmallBurg_outside_assets_162: 335321524
+      SmallBurg_outside_assets_163: 1932351678
+      SmallBurg_outside_assets_164: -848245605
+      SmallBurg_outside_assets_165: -194926902
+      SmallBurg_outside_assets_166: 243208111
+      SmallBurg_outside_assets_167: -1368999475
+      SmallBurg_outside_assets_168: 529668267
+      SmallBurg_outside_assets_169: -701016216
+      SmallBurg_outside_assets_17: -1236809888
+      SmallBurg_outside_assets_170: -111242483
+      SmallBurg_outside_assets_171: 1517265023
+      SmallBurg_outside_assets_172: 1059034881
+      SmallBurg_outside_assets_173: 1628331622
+      SmallBurg_outside_assets_174: 222633935
+      SmallBurg_outside_assets_175: -1696607564
+      SmallBurg_outside_assets_176: -1935459002
+      SmallBurg_outside_assets_177: -1565508295
+      SmallBurg_outside_assets_178: 70481812
+      SmallBurg_outside_assets_179: 1065643811
+      SmallBurg_outside_assets_18: -1806025094
+      SmallBurg_outside_assets_180: 1442544072
+      SmallBurg_outside_assets_181: 84919936
+      SmallBurg_outside_assets_182: 1001232573
+      SmallBurg_outside_assets_183: 791422330
+      SmallBurg_outside_assets_184: 632318340
+      SmallBurg_outside_assets_185: 1082523960
+      SmallBurg_outside_assets_186: 1191093673
+      SmallBurg_outside_assets_187: 1685863774
+      SmallBurg_outside_assets_188: 4586989
+      SmallBurg_outside_assets_189: -677243669
+      SmallBurg_outside_assets_19: 1606882475
+      SmallBurg_outside_assets_190: 593404429
+      SmallBurg_outside_assets_191: 1376967666
+      SmallBurg_outside_assets_192: -2102513573
+      SmallBurg_outside_assets_193: -1594034077
+      SmallBurg_outside_assets_194: -1293557463
+      SmallBurg_outside_assets_195: -1643310466
+      SmallBurg_outside_assets_196: -935011822
+      SmallBurg_outside_assets_197: 297267660
+      SmallBurg_outside_assets_198: -1870300501
+      SmallBurg_outside_assets_199: -32631049
+      SmallBurg_outside_assets_2: -252752621
+      SmallBurg_outside_assets_20: 311625604
+      SmallBurg_outside_assets_200: 1479605492
+      SmallBurg_outside_assets_201: -1294957262
+      SmallBurg_outside_assets_202: -1180823567
+      SmallBurg_outside_assets_203: -681893003
+      SmallBurg_outside_assets_204: -852445984
+      SmallBurg_outside_assets_205: -1144950189
+      SmallBurg_outside_assets_206: 1961827852
+      SmallBurg_outside_assets_207: -1685999994
+      SmallBurg_outside_assets_208: 555277449
+      SmallBurg_outside_assets_209: 1876829202
+      SmallBurg_outside_assets_21: 1407166679
+      SmallBurg_outside_assets_210: -10202908
+      SmallBurg_outside_assets_211: -1954959450
+      SmallBurg_outside_assets_212: 1482995086
+      SmallBurg_outside_assets_213: 1549029490
+      SmallBurg_outside_assets_214: 79023246
+      SmallBurg_outside_assets_215: -1556836532
+      SmallBurg_outside_assets_216: -1651598630
+      SmallBurg_outside_assets_217: 1917633264
+      SmallBurg_outside_assets_218: 236665217
+      SmallBurg_outside_assets_219: -1692757689
+      SmallBurg_outside_assets_22: 1414668587
+      SmallBurg_outside_assets_220: -297656241
+      SmallBurg_outside_assets_221: -1500888816
+      SmallBurg_outside_assets_222: -738763273
+      SmallBurg_outside_assets_223: 1230666104
+      SmallBurg_outside_assets_224: 2102863431
+      SmallBurg_outside_assets_225: 112574650
+      SmallBurg_outside_assets_226: 1585183935
+      SmallBurg_outside_assets_227: 1502183526
+      SmallBurg_outside_assets_228: 462456972
+      SmallBurg_outside_assets_229: -869340497
+      SmallBurg_outside_assets_23: -1382574785
+      SmallBurg_outside_assets_230: 396485251
+      SmallBurg_outside_assets_231: 1304243182
+      SmallBurg_outside_assets_232: 646009784
+      SmallBurg_outside_assets_233: 1553476397
+      SmallBurg_outside_assets_234: 1573176142
+      SmallBurg_outside_assets_235: 1573383441
+      SmallBurg_outside_assets_236: -1882615015
+      SmallBurg_outside_assets_237: 1056854627
+      SmallBurg_outside_assets_238: 1037684727
+      SmallBurg_outside_assets_239: 2110360277
+      SmallBurg_outside_assets_24: 1402624909
+      SmallBurg_outside_assets_240: -1339702675
+      SmallBurg_outside_assets_241: 223199765
+      SmallBurg_outside_assets_242: 442362271
+      SmallBurg_outside_assets_243: -1612383918
+      SmallBurg_outside_assets_244: 1196636801
+      SmallBurg_outside_assets_245: 1050493161
+      SmallBurg_outside_assets_246: 574544343
+      SmallBurg_outside_assets_247: 1685328490
+      SmallBurg_outside_assets_248: -1115724410
+      SmallBurg_outside_assets_249: -1282778889
+      SmallBurg_outside_assets_25: 981808013
+      SmallBurg_outside_assets_250: 874182214
+      SmallBurg_outside_assets_251: 450279292
+      SmallBurg_outside_assets_252: -1948806942
+      SmallBurg_outside_assets_253: -692983894
+      SmallBurg_outside_assets_254: -688265023
+      SmallBurg_outside_assets_255: -1275586118
+      SmallBurg_outside_assets_256: -1334321902
+      SmallBurg_outside_assets_257: 219667676
+      SmallBurg_outside_assets_258: 1133097154
+      SmallBurg_outside_assets_259: 766175139
+      SmallBurg_outside_assets_26: 5966202
+      SmallBurg_outside_assets_260: -1138067792
+      SmallBurg_outside_assets_261: 2080140959
+      SmallBurg_outside_assets_262: -546846812
+      SmallBurg_outside_assets_263: 1571666985
+      SmallBurg_outside_assets_264: -405614121
+      SmallBurg_outside_assets_265: 2097721326
+      SmallBurg_outside_assets_266: -955805917
+      SmallBurg_outside_assets_267: 671226236
+      SmallBurg_outside_assets_268: -561574758
+      SmallBurg_outside_assets_269: -1778759569
+      SmallBurg_outside_assets_27: 345521155
+      SmallBurg_outside_assets_270: 147423573
+      SmallBurg_outside_assets_271: 2116628311
+      SmallBurg_outside_assets_272: -233371118
+      SmallBurg_outside_assets_273: -1663897990
+      SmallBurg_outside_assets_274: -1493980062
+      SmallBurg_outside_assets_275: -1506422276
+      SmallBurg_outside_assets_276: 370513515
+      SmallBurg_outside_assets_277: 1678493367
+      SmallBurg_outside_assets_278: 780708826
+      SmallBurg_outside_assets_279: -959210673
+      SmallBurg_outside_assets_28: -1059897700
+      SmallBurg_outside_assets_280: 1805516119
+      SmallBurg_outside_assets_281: 1367509032
+      SmallBurg_outside_assets_282: -187926463
+      SmallBurg_outside_assets_283: 10053633
+      SmallBurg_outside_assets_284: 1017601057
+      SmallBurg_outside_assets_285: 1450157321
+      SmallBurg_outside_assets_286: -126448199
+      SmallBurg_outside_assets_287: 397148414
+      SmallBurg_outside_assets_288: 797429499
+      SmallBurg_outside_assets_289: 1470988310
+      SmallBurg_outside_assets_29: -1440731644
+      SmallBurg_outside_assets_290: -1788989176
+      SmallBurg_outside_assets_291: 1622227644
+      SmallBurg_outside_assets_292: -56696936
+      SmallBurg_outside_assets_293: 1788426595
+      SmallBurg_outside_assets_294: -899497753
+      SmallBurg_outside_assets_295: -1112414797
+      SmallBurg_outside_assets_296: -1879701456
+      SmallBurg_outside_assets_297: 880543251
+      SmallBurg_outside_assets_298: -1265876228
+      SmallBurg_outside_assets_299: -1424600383
+      SmallBurg_outside_assets_3: -1608078820
+      SmallBurg_outside_assets_30: 577088154
+      SmallBurg_outside_assets_300: -365452873
+      SmallBurg_outside_assets_301: -1611011439
+      SmallBurg_outside_assets_302: 1225791914
+      SmallBurg_outside_assets_303: -150610842
+      SmallBurg_outside_assets_304: -1960089502
+      SmallBurg_outside_assets_305: 1577711499
+      SmallBurg_outside_assets_306: 144001624
+      SmallBurg_outside_assets_307: 105391114
+      SmallBurg_outside_assets_308: 2091327931
+      SmallBurg_outside_assets_309: 325809351
+      SmallBurg_outside_assets_31: -1485030953
+      SmallBurg_outside_assets_310: -2071580429
+      SmallBurg_outside_assets_311: -34803002
+      SmallBurg_outside_assets_312: 479488671
+      SmallBurg_outside_assets_313: -293645183
+      SmallBurg_outside_assets_314: 368716591
+      SmallBurg_outside_assets_315: -1174562772
+      SmallBurg_outside_assets_316: 1232765900
+      SmallBurg_outside_assets_317: 1432095254
+      SmallBurg_outside_assets_318: 1785041015
+      SmallBurg_outside_assets_319: -497138271
+      SmallBurg_outside_assets_32: 1145681330
+      SmallBurg_outside_assets_320: 1009286063
+      SmallBurg_outside_assets_321: -1337968651
+      SmallBurg_outside_assets_322: 462017225
+      SmallBurg_outside_assets_323: 363623984
+      SmallBurg_outside_assets_324: -1695621473
+      SmallBurg_outside_assets_325: 385581035
+      SmallBurg_outside_assets_326: -1055309711
+      SmallBurg_outside_assets_327: 1885617948
+      SmallBurg_outside_assets_328: -1567539655
+      SmallBurg_outside_assets_329: -1091880872
+      SmallBurg_outside_assets_33: -1396109326
+      SmallBurg_outside_assets_330: 367551805
+      SmallBurg_outside_assets_331: 436966053
+      SmallBurg_outside_assets_332: -1220416476
+      SmallBurg_outside_assets_333: -2116563506
+      SmallBurg_outside_assets_334: -914363986
+      SmallBurg_outside_assets_335: -453519242
+      SmallBurg_outside_assets_336: -336843230
+      SmallBurg_outside_assets_337: 156813620
+      SmallBurg_outside_assets_338: 1210055402
+      SmallBurg_outside_assets_339: 2001577781
+      SmallBurg_outside_assets_34: -257698380
+      SmallBurg_outside_assets_340: -1888192417
+      SmallBurg_outside_assets_341: -863136719
+      SmallBurg_outside_assets_342: -1256457198
+      SmallBurg_outside_assets_343: 954513380
+      SmallBurg_outside_assets_344: 249729748
+      SmallBurg_outside_assets_35: 1584957066
+      SmallBurg_outside_assets_36: 312901496
+      SmallBurg_outside_assets_37: -240709655
+      SmallBurg_outside_assets_38: 686047162
+      SmallBurg_outside_assets_39: 894802583
+      SmallBurg_outside_assets_4: 2073409465
+      SmallBurg_outside_assets_40: -151576261
+      SmallBurg_outside_assets_41: -1114355155
+      SmallBurg_outside_assets_42: -830069734
+      SmallBurg_outside_assets_43: -1741190794
+      SmallBurg_outside_assets_44: -1517711721
+      SmallBurg_outside_assets_45: 161118276
+      SmallBurg_outside_assets_46: 1856726575
+      SmallBurg_outside_assets_47: -474034120
+      SmallBurg_outside_assets_48: 2100856766
+      SmallBurg_outside_assets_49: -273946805
+      SmallBurg_outside_assets_5: -2072355671
+      SmallBurg_outside_assets_50: 1116156802
+      SmallBurg_outside_assets_51: 1434466225
+      SmallBurg_outside_assets_52: -981731007
+      SmallBurg_outside_assets_53: -1130405223
+      SmallBurg_outside_assets_54: -296157208
+      SmallBurg_outside_assets_55: 1937590144
+      SmallBurg_outside_assets_56: 1691134656
+      SmallBurg_outside_assets_57: -140704341
+      SmallBurg_outside_assets_58: 1412640478
+      SmallBurg_outside_assets_59: 1362165519
+      SmallBurg_outside_assets_6: -1149679811
+      SmallBurg_outside_assets_60: -608828431
+      SmallBurg_outside_assets_61: -1239505183
+      SmallBurg_outside_assets_62: -1607673303
+      SmallBurg_outside_assets_63: -1811500822
+      SmallBurg_outside_assets_64: -489055520
+      SmallBurg_outside_assets_65: 1526211602
+      SmallBurg_outside_assets_66: 551625399
+      SmallBurg_outside_assets_67: 35949970
+      SmallBurg_outside_assets_68: -2004436239
+      SmallBurg_outside_assets_69: 1443299042
+      SmallBurg_outside_assets_7: 1010709977
+      SmallBurg_outside_assets_70: 249000424
+      SmallBurg_outside_assets_71: -35046504
+      SmallBurg_outside_assets_72: -1001293310
+      SmallBurg_outside_assets_73: -626518494
+      SmallBurg_outside_assets_74: 502563849
+      SmallBurg_outside_assets_75: 833404569
+      SmallBurg_outside_assets_76: 1103886660
+      SmallBurg_outside_assets_77: -297851327
+      SmallBurg_outside_assets_78: -1613368878
+      SmallBurg_outside_assets_79: 70814831
+      SmallBurg_outside_assets_8: 176632913
+      SmallBurg_outside_assets_80: -1276105342
+      SmallBurg_outside_assets_81: 827675455
+      SmallBurg_outside_assets_82: 285033024
+      SmallBurg_outside_assets_83: 668670523
+      SmallBurg_outside_assets_84: 1437945801
+      SmallBurg_outside_assets_85: -1268019004
+      SmallBurg_outside_assets_86: -904137224
+      SmallBurg_outside_assets_87: 110962436
+      SmallBurg_outside_assets_88: -1865017129
+      SmallBurg_outside_assets_89: -245309300
+      SmallBurg_outside_assets_9: -1591352133
+      SmallBurg_outside_assets_90: -207104266
+      SmallBurg_outside_assets_91: 997444604
+      SmallBurg_outside_assets_92: -1138609967
+      SmallBurg_outside_assets_93: -133218733
+      SmallBurg_outside_assets_94: 1898498289
+      SmallBurg_outside_assets_95: -1915725722
+      SmallBurg_outside_assets_96: 1342046783
+      SmallBurg_outside_assets_97: 3289443
+      SmallBurg_outside_assets_98: -1035060877
+      SmallBurg_outside_assets_99: 467450472
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
