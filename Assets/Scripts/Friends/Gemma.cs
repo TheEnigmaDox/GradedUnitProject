@@ -42,5 +42,6 @@ public class Gemma : MonoBehaviour
     {
         playerInRange = false;
         dialogueManager.ResetDialogue();
+        dialogueBox.SetActive(false);
     }
 }
