@@ -1,29 +1,33 @@
-using TMPro;
-using UnityEditor;
-using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
-public class Gemma : MonoBehaviour
+public class Billy : MonoBehaviour
 {
     bool playerInRange;
-    
+
     public GameObject dialogueBox;
+    public GameObject speed;
 
     public List<string> dialogues = new List<string>();
 
     public DialogueManager dialogueManager;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(playerInRange && Input.GetButtonDown("Jump"))
+        if (playerInRange && Input.GetButtonDown("Jump"))
         {
             dialogueManager.dialogueList = new List<string>();
             dialogueManager.dialogueList = dialogues;
             dialogueBox.SetActive(true);
-            dialogueManager.narcotic = "Alcohol";
+            dialogueManager.narcotic = "Speed";
             dialogueManager.ResetDialogue();
         }
 

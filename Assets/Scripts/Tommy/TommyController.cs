@@ -87,11 +87,6 @@ public class TommyController : MonoBehaviour
         }
         
         tommyRB.velocity = (direction.normalized + drunkOffset.normalized) * moveSpeed * Time.deltaTime;
-
-        if (direction == Vector2.zero)
-        {
-            Debug.Log("Direction is zeroed");
-        }
     }
 
     void AnimateCharacter()

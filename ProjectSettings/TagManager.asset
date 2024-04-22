@@ -41,6 +41,9 @@ TagManager:
   - name: Ground
     uniqueID: 857180493
     locked: 0
+  - name: Water
+    uniqueID: 1350618115
+    locked: 0
   - name: BuildingLower
     uniqueID: 463422711
     locked: 0
