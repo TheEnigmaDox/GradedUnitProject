@@ -45,5 +45,7 @@ public class Billy : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         playerInRange = false;
+        dialogueManager.ResetDialogue();
+        dialogueBox.SetActive(false);
     }
 }

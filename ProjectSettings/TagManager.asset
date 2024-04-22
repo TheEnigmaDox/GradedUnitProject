@@ -38,11 +38,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackgroundWater
+    uniqueID: 2478870525
+    locked: 0
   - name: Ground
     uniqueID: 857180493
     locked: 0
   - name: Water
     uniqueID: 1350618115
+    locked: 0
+  - name: BackgroundDeco
+    uniqueID: 1393250741
     locked: 0
   - name: BuildingLower
     uniqueID: 463422711
@@ -56,6 +62,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: ForegroundDeco
+    uniqueID: 1206761199
+    locked: 0
   - name: Decorations
     uniqueID: 1057306977
+    locked: 0
+  - name: SceneBlackout
+    uniqueID: 1581874811
     locked: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TommyController : MonoBehaviour
 {
+    bool playerControl = true;
     public bool isDrunk = false;
     public bool onSpeed = false;
     public bool onHeroin = false;
@@ -34,11 +35,14 @@ public class TommyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, minPos.x, maxPos.x),
-            Mathf.Clamp(transform.position.y, minPos.y, maxPos.y),
-            transform.position.z);
+        if (playerControl)
+        {
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, minPos.x, maxPos.x),
+                Mathf.Clamp(transform.position.y, minPos.y, maxPos.y),
+                transform.position.z);
 
-        MoveCharacter();
+            MoveCharacter(); 
+        }
     }
 
     void MoveCharacter()

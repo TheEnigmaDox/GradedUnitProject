@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -10,9 +12,15 @@ public class Timer : MonoBehaviour
 
     [SerializeField] TMP_Text timerText;
 
+    public Image timerBackground;
+
+    public SceneLoader sceneLoader;
+    public TommyController tommyController;
+
     // Start is called before the first frame update
     void Start()
     {
+        sceneLoader = FindObjectOfType<SceneLoader>();  
         timeLeft = maxTimer;
     }
 
@@ -28,6 +36,13 @@ public class Timer : MonoBehaviour
         {
             Debug.Log("Time is up!");
             timeLeft = 0;
+            sceneLoader.LoadNextScene((SceneManager.GetActiveScene().buildIndex + 1));
+        }
+
+        if(SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            timerBackground.GetComponent<Image>().enabled = false;
+            timerText.text = "";
         }
     }
 
