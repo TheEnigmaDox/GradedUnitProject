@@ -53,11 +53,12 @@ public class DialogueManager : MonoBehaviour
             continueButton.gameObject.SetActive(false);
         }
 
-        Debug.Log(dialogueIndex);
+        Debug.Log(typeSpeed);
     }
 
     public void AdvanceText()
     {
+        Debug.Log("Advancing Text!");
         dialogueToShow = "";
 
         if (dialogueIndex < dialogueList.Count - 1)
@@ -135,6 +136,6 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueToShow = "";
         dialogueIndex = 0;
-        dialogueToShow = dialogueList[dialogueIndex];
+        //dialogueToShow = dialogueList[dialogueIndex];
     }
 }
