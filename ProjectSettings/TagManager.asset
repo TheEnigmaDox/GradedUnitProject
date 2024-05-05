@@ -44,20 +44,14 @@ TagManager:
   - name: Ground
     uniqueID: 857180493
     locked: 0
-  - name: Water
-    uniqueID: 1350618115
-    locked: 0
   - name: BackgroundDeco
     uniqueID: 1393250741
     locked: 0
-  - name: BuildingLower
-    uniqueID: 463422711
+  - name: Water
+    uniqueID: 1350618115
     locked: 0
-  - name: BuildingUpper
-    uniqueID: 2062578885
-    locked: 0
-  - name: BuildingRoofs
-    uniqueID: 221075557
+  - name: Collidables
+    uniqueID: 4209343143
     locked: 0
   - name: Default
     uniqueID: 0

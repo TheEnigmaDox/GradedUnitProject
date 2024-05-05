@@ -20,11 +20,7 @@ public class Gemma : MonoBehaviour
     {
         if(playerInRange && Input.GetButtonDown("Jump"))
         {
-            dialogueManager.dialogueList = new List<string>();
-            dialogueManager.dialogueList = dialogues;
-            dialogueBox.SetActive(true);
-            dialogueManager.narcotic = "Alcohol";
-            dialogueManager.ResetDialogue();
+            
         }
 
         Debug.Log("Player in range : " + playerInRange);
@@ -41,7 +37,5 @@ public class Gemma : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         playerInRange = false;
-        dialogueManager.ResetDialogue();
-        dialogueBox.SetActive(false);
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4821296153431616966}
   - component: {fileID: 3876815660165334888}
   - component: {fileID: 8955062076163491408}
-  - component: {fileID: 8892122905818172008}
+  - component: {fileID: 6007493838455023885}
   m_Layer: 0
   m_Name: Aiesha
   m_TagString: Untagged
@@ -227,7 +227,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8892122905818172008
+--- !u!114 &6007493838455023885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,11 +236,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7016053461269564475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9194bea7116437a4d91b42bee3dc539c, type: 3}
+  m_Script: {fileID: 11500000, guid: e66a41bde6c3e9f4fb01359246c7a4c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 0}
-  dialogues:
-  - Aiesha element one
-  - Aiesha element two
-  dialogueManager: {fileID: 0}
+  dialogue: {fileID: 0}

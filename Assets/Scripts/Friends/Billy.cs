@@ -24,11 +24,7 @@ public class Billy : MonoBehaviour
     {
         if (playerInRange && Input.GetButtonDown("Jump"))
         {
-            dialogueManager.dialogueList = new List<string>();
-            dialogueManager.dialogueList = dialogues;
-            dialogueBox.SetActive(true);
-            dialogueManager.narcotic = "Speed";
-            dialogueManager.ResetDialogue();
+           
         }
 
         Debug.Log("Player in range : " + playerInRange);
@@ -45,7 +41,5 @@ public class Billy : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         playerInRange = false;
-        dialogueManager.ResetDialogue();
-        dialogueBox.SetActive(false);
     }
 }

@@ -159,7 +159,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &1926680745033044772
 Animator:
@@ -197,14 +197,12 @@ MonoBehaviour:
   isDrunk: 0
   onSpeed: 0
   onHeroin: 0
-  moveSpeed: 250
+  moveSpeed: 500
   alcoholTimer: 0
   speedTimer: 0
   heroinTimer: 0
   direction: {x: 0, y: 0}
   drunkOffset: {x: 0, y: 0}
-  minPos: {x: -1000, y: -1000}
-  maxPos: {x: 1000, y: 1000}
 --- !u!1 &7664508926624575134
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +255,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: f7449f1bc574f07a65582d0d000000006139053f4d89173303cc8050fd8fc0937b7e495e
+  m_ApplyToSortingLayers: fd8fc0934d891733b5510b5303cc8050a77ae5fa00000000efb6ed476139053f7b7e495e
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0

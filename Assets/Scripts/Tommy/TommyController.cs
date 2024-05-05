@@ -19,9 +19,6 @@ public class TommyController : MonoBehaviour
     [SerializeField] Vector2 direction;
     [SerializeField] Vector2 drunkOffset;
 
-    [SerializeField] Vector2 minPos;
-    [SerializeField] Vector2 maxPos;
-
     Rigidbody2D tommyRB;
     Animator tommyAnim;
 
@@ -37,18 +34,26 @@ public class TommyController : MonoBehaviour
     {
         if (playerControl)
         {
-            transform.position = new Vector3(Mathf.Clamp(transform.position.x, minPos.x, maxPos.x),
-                Mathf.Clamp(transform.position.y, minPos.y, maxPos.y),
-                transform.position.z);
-
-            MoveCharacter(); 
+            direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); 
         }
+
+        if(direction !=  Vector2.zero)
+        {
+            AnimateCharacter();
+        }
+        else
+        {
+            tommyAnim.SetBool("isMoving", false);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        MoveCharacter();
     }
 
     void MoveCharacter()
     {
-        direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-
         AnimateCharacter();
 
         if(isDrunk)
@@ -89,8 +94,8 @@ public class TommyController : MonoBehaviour
                 moveSpeed = 250f;
             }
         }
-        
-        tommyRB.velocity = (direction.normalized + drunkOffset.normalized) * moveSpeed * Time.deltaTime;
+
+        tommyRB.velocity = moveSpeed * Time.deltaTime * (direction.normalized + drunkOffset.normalized);
     }
 
     void AnimateCharacter()
