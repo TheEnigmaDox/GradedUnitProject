@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    bool dialogueOpen = false;
+
     float typeSpeed = 0.05f;
 
     Queue<string> sentences;
@@ -17,21 +19,34 @@ public class DialogueManager : MonoBehaviour
     
     public Animator dialogueBoxAnimator;
 
+    TommyController tommyController;
+
     // Start is called before the first frame update
     void Start()
     {
+        tommyController = FindObjectOfType<TommyController>();
+
         sentences = new Queue<string>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        dialogueBoxAnimator.SetBool("isOpen", dialogueOpen);
 
+        if(dialogueOpen)
+        {
+            tommyController.playerControl = false;
+        }
+        else
+        {
+            tommyController.playerControl = true;
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
-        dialogueBoxAnimator.SetBool("isOpen", true);
+        dialogueOpen = true;
 
         nameText.text = dialogue.speakerName;
 
@@ -79,6 +94,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        dialogueBoxAnimator.SetBool("isOpen", false);
+        dialogueOpen = false;
+        contButton.SetActive(false);
     }
 }

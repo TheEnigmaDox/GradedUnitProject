@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6563736614497119322}
   - component: {fileID: 1699897932740700884}
   - component: {fileID: 3496985078042940048}
-  - component: {fileID: 4372113995146357576}
+  - component: {fileID: 1342026125716602163}
   m_Layer: 0
   m_Name: Billy
   m_TagString: Untagged
@@ -227,7 +227,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4372113995146357576
+--- !u!114 &1342026125716602163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -236,12 +236,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 5138643788158237486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1fec6d9a48200d4883669e5f22ffbd0, type: 3}
+  m_Script: {fileID: 11500000, guid: e66a41bde6c3e9f4fb01359246c7a4c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 0}
-  speed: {fileID: 8985951295964317322, guid: e737672b564c5c843ac03cb0b14881fd, type: 3}
-  dialogues:
-  - Billy element one
-  - Billy element two
-  dialogueManager: {fileID: 0}
+  dialogue:
+    speakerName: Billy
+    narcotic: Speed
+    sentences:
+    - Hey man! I got a little something to give you the bounce you need.
+    - Next to that tree you will find my stash, grab one of the pills, don't worry
+      it's only a little speed haha.
+    - You heard about the jump everyone is doing? I noticed there's no life ring
+      but bah! who needs one of those haha.

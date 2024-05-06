@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TommyController : MonoBehaviour
 {
-    bool playerControl = true;
+    public bool playerControl = true;
     public bool isDrunk = false;
     public bool onSpeed = false;
     public bool onHeroin = false;

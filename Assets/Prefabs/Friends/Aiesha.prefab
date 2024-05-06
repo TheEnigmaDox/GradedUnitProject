@@ -239,4 +239,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66a41bde6c3e9f4fb01359246c7a4c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 0}
+  dialogue:
+    speakerName: Aiesha
+    narcotic: Alcohol
+    sentences:
+    - Hey Tommy! Im glad you could make it. This campsite is lit! pity about not
+      being allowed to swim though :(.
+    - Nevermind that though, some of the guys are doing a cliff jump later. You totally
+      need to join us!
+    - You should go round the back of my tent, you will get some booze to help you
+      get in the vibe ;).

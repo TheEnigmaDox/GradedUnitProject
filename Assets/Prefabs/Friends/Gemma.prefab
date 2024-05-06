@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 5947665703079124484}
   - component: {fileID: 749712570827459500}
   - component: {fileID: 5757931175193110559}
-  - component: {fileID: 6505306411313065084}
   - component: {fileID: 4940986497362215306}
+  - component: {fileID: 611610512382490849}
   m_Layer: 0
   m_Name: Gemma
   m_TagString: Untagged
@@ -206,23 +206,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5696337, y: 0.92535293}
   m_EdgeRadius: 0
---- !u!114 &6505306411313065084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2079837959328227410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02f18c1bda261c942b6043f093cdf568, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 0}
-  dialogues:
-  - Gemma element one
-  - Gemma element two
-  dialogueManager: {fileID: 0}
 --- !u!95 &4940986497362215306
 Animator:
   serializedVersion: 5
@@ -244,3 +227,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &611610512382490849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079837959328227410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e66a41bde6c3e9f4fb01359246c7a4c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    speakerName: Gemma
+    narcotic: Heroine
+    sentences:
+    - Tommy! You need to stop piddling about with the other crap kicking around.
+    - 'I got some gear here, heroine if you don''t know what that is. Have a hit,
+      it will transport you to paradise! '
+    - Make sure you come to the cliff jump, it's gonna be outta this world. We are
+      going later so the campsite staff don't catch us.

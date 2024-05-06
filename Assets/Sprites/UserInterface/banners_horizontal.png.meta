@@ -144,7 +144,7 @@ TextureImporter:
         width: 14
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 4, y: 3, z: 4, w: 3}
       outline: []
       physicsShape: []
@@ -165,7 +165,7 @@ TextureImporter:
         width: 16
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 5, y: 3, z: 5, w: 3}
       outline: []
       physicsShape: []
@@ -186,7 +186,7 @@ TextureImporter:
         width: 14
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 4, y: 3, z: 4, w: 3}
       outline: []
       physicsShape: []
@@ -194,6 +194,195 @@ TextureImporter:
       bones: []
       spriteID: 6c6861a141bd263498925089b41f9943
       internalID: 77413332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banners_horizontal_3
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 177
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 4, z: 5, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f57b0089c88c39646b1f21d6f725516e
+      internalID: -725960482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banners_horizontal_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 177
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 4, z: 5, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8154bc89507e2d043a503948c9cf110e
+      internalID: -1258302610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banners_horizontal_5
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 177
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 4, z: 5, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f3fcd1192e7974b9cbeef9d29a5d15
+      internalID: 545030695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banners_horizontal_6
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 209
+        width: 3
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c440050ce1dae747b9fec478188859b
+      internalID: -833588261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banners_horizontal_7
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 209
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 3, z: 5, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f7120e4d7f18a48ab160a73681ce87
+      internalID: -986368470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banners_horizontal_8
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 209
+        width: 3
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604750fe3f8a6f64bad9341c4a4c69b3
+      internalID: -307046482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banners_horizontal_9
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 753
+        width: 3
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1bd7f576ddb82449eea11e41fc6be2
+      internalID: -1948045971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banners_horizontal_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 753
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 5, y: 3, z: 5, w: 3}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e2e831a4e8af2044aac716c8cefe711
+      internalID: -1878884019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banners_horizontal_11
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 753
+        width: 3
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232c50179cb64b94b9c75f8d87cef57d
+      internalID: 1877253940
       vertices: []
       indices: 
       edges: []
@@ -211,7 +400,16 @@ TextureImporter:
     nameFileIdTable:
       banners_horizontal_0: -1855055137
       banners_horizontal_1: -903100764
+      banners_horizontal_10: -1878884019
+      banners_horizontal_11: 1877253940
       banners_horizontal_2: 77413332
+      banners_horizontal_3: -725960482
+      banners_horizontal_4: -1258302610
+      banners_horizontal_5: 545030695
+      banners_horizontal_6: -833588261
+      banners_horizontal_7: -986368470
+      banners_horizontal_8: -307046482
+      banners_horizontal_9: -1948045971
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
