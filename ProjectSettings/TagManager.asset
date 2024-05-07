@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - UpTrigger
+  - DownTrigger
+  - LeftTrigger
+  - RightTrigger
   layers:
   - Default
   - TransparentFX
@@ -41,8 +45,14 @@ TagManager:
   - name: BackgroundWater
     uniqueID: 2478870525
     locked: 0
+  - name: Cliff Fill
+    uniqueID: 1892251655
+    locked: 0
   - name: Ground
     uniqueID: 857180493
+    locked: 0
+  - name: Cliff
+    uniqueID: 2298126575
     locked: 0
   - name: BackgroundDeco
     uniqueID: 1393250741

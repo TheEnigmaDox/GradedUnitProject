@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/CampSite.unity
+    guid: 9f1d1d960324c64458170ce249b57e03
   - enabled: 1
-    path: Assets/Scenes/CliffJump.unity
-    guid: ed924a77e3f220a4d822204a5baacb10
+    path: Assets/Scenes/cliff_Jump.unity
+    guid: d99a9e3afcbeab847baae78ad0b221ce
+  - enabled: 1
+    path: Assets/Scenes/Maze_Easy.unity
+    guid: 6ca2e149556842e47a2b58ddeeccf91e
   m_configObjects: {}
