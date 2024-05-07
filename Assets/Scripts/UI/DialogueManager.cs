@@ -11,6 +11,7 @@ public class DialogueManager : MonoBehaviour
     float typeSpeed = 0.05f;
 
     string question = "Would you like some booze to get you in the vibe!";
+
     Queue<string> sentences;
 
     public TMP_Text nameText;
