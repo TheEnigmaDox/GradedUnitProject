@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    float waitTime = 1f;
+    float waitTime = 1.5f;
 
     public Animator transitionAnim;
 
