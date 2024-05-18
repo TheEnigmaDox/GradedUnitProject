@@ -12,12 +12,19 @@ public class DialogueManager : MonoBehaviour
 
     string question = "Would you like some booze to get you in the vibe!";
 
+    public string narcoticToSpawn;
     Queue<string> sentences;
 
     public TMP_Text nameText;
     public TMP_Text dialogueText;
 
+    public GameObject alcohol;
+    public GameObject heroine;
+    public GameObject speed;
+
     public GameObject contButton;
+    public GameObject yesButton;
+    public GameObject noButton;
     
     public Animator dialogueBoxAnimator;
 
@@ -29,6 +36,9 @@ public class DialogueManager : MonoBehaviour
         tommyController = FindObjectOfType<TommyController>();
 
         sentences = new Queue<string>();
+
+        yesButton.gameObject.SetActive(false);
+        noButton.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -44,7 +54,32 @@ public class DialogueManager : MonoBehaviour
         {
             tommyController.playerControl = true;
         }
+
+        Debug.Log(narcoticToSpawn);
     }
+
+    public void SpawnNarcotic()
+    {
+        if(narcoticToSpawn == "Alcohol")
+        {
+            Instantiate(alcohol, new Vector2(-6, 12), Quaternion.identity);
+        }
+        else if (narcoticToSpawn == "Heroine")
+        {
+            Instantiate(heroine, new Vector2(-15, 1.5f), Quaternion.identity);
+        }
+        if (narcoticToSpawn == "Speed")
+        {
+            Instantiate(speed, new Vector2(-14.75f, 10), Quaternion.identity);
+        }
+
+        yesButton.gameObject.SetActive(false);
+        noButton.gameObject.SetActive(false);
+
+        EndDialogue();
+    }
+
+    
 
     public void StartDialogue(Dialogue dialogue)
     {
@@ -71,6 +106,9 @@ public class DialogueManager : MonoBehaviour
         }
         else if(sentences.Count == 1)
         {
+            yesButton.gameObject.SetActive(true);
+            noButton.gameObject.SetActive(true);
+
             Debug.Log("Question logic here");
         }
 
@@ -98,7 +136,7 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    void EndDialogue()
+    public void EndDialogue()
     {
         dialogueOpen = false;
         contButton.SetActive(false);

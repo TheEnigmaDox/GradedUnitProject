@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UIScript : MonoBehaviour
 {
-    [SerializeField] Slider intoxicationSlider;
+    public Slider intoxicationSlider;
 
     // Start is called before the first frame update
     void Start()

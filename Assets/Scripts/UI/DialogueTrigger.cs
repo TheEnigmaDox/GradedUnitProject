@@ -28,6 +28,7 @@ public class DialogueTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             playerInRange = true;
+            FindObjectOfType<DialogueManager>().narcoticToSpawn = dialogue.narcotic;
         }
     }
 
