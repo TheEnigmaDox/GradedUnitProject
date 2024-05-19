@@ -15,7 +15,6 @@ public class Timer : MonoBehaviour
     public Image timerBackground;
 
     public SceneLoader sceneLoader;
-    public TommyController tommyController;
 
     // Start is called before the first frame update
     void Start()
