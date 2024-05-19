@@ -15,7 +15,7 @@ public class Speed : MonoBehaviour
         tommyController = FindObjectOfType<TommyController>();
         uiScript = FindObjectOfType<UIScript>();
 
-        intoxicationAmount = 15f;
+        intoxicationAmount = 50f;
     }
 
     // Update is called once per frame

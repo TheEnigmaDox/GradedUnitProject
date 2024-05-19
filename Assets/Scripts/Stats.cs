@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Stats : MonoBehaviour
 {
-    float toxLevel = 0f;
+    public float toxLevel = 0f;
 
     UIScript uiScript;
 
@@ -36,5 +36,7 @@ public class Stats : MonoBehaviour
     void Update()
     {
         toxLevel = uiScript.intoxicationSlider.value;
+
+        Debug.Log("Tox Level : " + toxLevel);
     }
 }

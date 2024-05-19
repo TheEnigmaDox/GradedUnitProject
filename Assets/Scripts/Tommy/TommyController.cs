@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TommyController : MonoBehaviour
 {
+    bool isSwimming = false;
     public bool playerControl = true;
     public bool isDrunk = false;
     public bool onSpeed = false;
@@ -44,6 +46,12 @@ public class TommyController : MonoBehaviour
         else
         {
             tommyAnim.SetBool("isMoving", false);
+        }
+
+        if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            tommyAnim.SetBool("isSwimming", true);
+            isSwimming = true;
         }
     }
 

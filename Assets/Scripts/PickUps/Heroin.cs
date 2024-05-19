@@ -15,7 +15,7 @@ public class Heroin : MonoBehaviour
         tommyController = FindObjectOfType<TommyController>();
         uiScript = FindObjectOfType<UIScript>();
 
-        intoxicationAmount = 50f;
+        intoxicationAmount = 100f;
     }
 
     // Update is called once per frame
