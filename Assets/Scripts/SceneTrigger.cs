@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SceneTrigger : MonoBehaviour
 {
+    AudioSource impactSource;
+
+    public List<AudioClip> audioClips;
 
     SceneLoader sceneLoader;
 
@@ -11,13 +14,17 @@ public class SceneTrigger : MonoBehaviour
     void Start()
     {
         sceneLoader = FindAnyObjectByType<SceneLoader>();
+        impactSource = GetComponent<AudioSource>();
+
+        impactSource.Stop();
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            sceneLoader.LoadNextScene(2);
-        }    
+            collision.GetComponent<TommyController>().isSwimming = true;
+            sceneLoader.LoadNextScene(3);
+        }
     }
 }

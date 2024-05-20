@@ -8,6 +8,7 @@ TagManager:
   - DownTrigger
   - LeftTrigger
   - RightTrigger
+  - SceneTrigger
   layers:
   - Default
   - TransparentFX

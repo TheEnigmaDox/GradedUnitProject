@@ -25,7 +25,8 @@ public class DialogueManager : MonoBehaviour
     public GameObject contButton;
     public GameObject yesButton;
     public GameObject noButton;
-    
+
+    AudioSource typeAudio;
     public Animator dialogueBoxAnimator;
 
     TommyController tommyController;
@@ -35,10 +36,14 @@ public class DialogueManager : MonoBehaviour
     {
         tommyController = FindObjectOfType<TommyController>();
 
+        typeAudio = GetComponent<AudioSource>();
+
         sentences = new Queue<string>();
 
         yesButton.gameObject.SetActive(false);
         noButton.gameObject.SetActive(false);
+
+        typeAudio.Stop();
     }
 
     // Update is called once per frame
@@ -121,19 +126,25 @@ public class DialogueManager : MonoBehaviour
     {
         contButton.SetActive(false);
 
+        if (!typeAudio.isPlaying)
+        {
+            typeAudio.Play();
+        }
+
         dialogueText.text = "";
 
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
+            
             yield return new WaitForSeconds(typeSpeed);
         }
 
         if (dialogueText.text == sentence)
         {
+            typeAudio.Stop();
             contButton.SetActive(true);
         }
-
     }
 
     public void EndDialogue()

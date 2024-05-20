@@ -9,13 +9,18 @@ public class Heroin : MonoBehaviour
     UIScript uiScript;
     TommyController tommyController;
 
+    AudioSource heroinAudio;
+
     // Start is called before the first frame update
     void Start()
     {
         tommyController = FindObjectOfType<TommyController>();
         uiScript = FindObjectOfType<UIScript>();
+        heroinAudio = GetComponent<AudioSource>();
 
-        intoxicationAmount = 100f;
+        intoxicationAmount = 75f;
+
+        heroinAudio.Stop();
     }
 
     // Update is called once per frame
@@ -26,12 +31,20 @@ public class Heroin : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "Player")
+        if(collision.CompareTag("Player"))
         {
+            heroinAudio.Play();
             uiScript.AddIntoxication(intoxicationAmount);  
             tommyController.onHeroin = true;
             tommyController.heroinTimer = 5f;
-            Destroy(gameObject);
+
+            StartCoroutine(DestroyHerion());
         }
+    }
+
+    IEnumerator DestroyHerion()
+    {
+        yield return new WaitForSeconds(0.3f);
+        Destroy(gameObject);
     }
 }

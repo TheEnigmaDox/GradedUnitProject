@@ -48,7 +48,7 @@ public class CameraFollow : MonoBehaviour
             Mathf.Clamp(transform.position.y, minPos.y, maxPos.y),
             transform.position.z);
 
-        if(SceneManager.GetActiveScene().buildIndex == 2)
+        if(SceneManager.GetActiveScene().buildIndex == 3)
         {
             switch (GetComponent<Camera>().orthographicSize)
             {

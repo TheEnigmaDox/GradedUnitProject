@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TommyController : MonoBehaviour
 {
-    bool isSwimming = false;
+    int audioIndex = 4;
+
+    public bool isSwimming = false;
     public bool playerControl = true;
     public bool isDrunk = false;
     public bool onSpeed = false;
@@ -18,9 +21,14 @@ public class TommyController : MonoBehaviour
     public float speedTimer;
     public float heroinTimer;
 
+    public List<AudioClip> walkSounds = new List<AudioClip>();
+
     [SerializeField] Vector2 direction;
     [SerializeField] Vector2 drunkOffset;
 
+    AudioSource tommyAudio;
+
+    SceneLoader sceneLoader;
     Rigidbody2D tommyRB;
     Animator tommyAnim;
 
@@ -29,6 +37,8 @@ public class TommyController : MonoBehaviour
     {
         tommyRB = GetComponent<Rigidbody2D>();  
         tommyAnim = GetComponent<Animator>();
+        sceneLoader = FindObjectOfType<SceneLoader>();
+        tommyAudio = GetComponent<AudioSource>();   
     }
 
     // Update is called once per frame
@@ -48,7 +58,7 @@ public class TommyController : MonoBehaviour
             tommyAnim.SetBool("isMoving", false);
         }
 
-        if (SceneManager.GetActiveScene().buildIndex == 2)
+        if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             tommyAnim.SetBool("isSwimming", true);
             isSwimming = true;
@@ -104,6 +114,11 @@ public class TommyController : MonoBehaviour
         }
 
         tommyRB.velocity = moveSpeed * Time.deltaTime * (direction.normalized + drunkOffset.normalized);
+
+        if (direction != Vector2.zero && !tommyAudio.isPlaying && SceneManager.GetActiveScene().buildIndex != 3)
+        {
+            PlayNextClip(); 
+        }
     }
 
     void AnimateCharacter()
@@ -135,5 +150,23 @@ public class TommyController : MonoBehaviour
     Vector2 DrunkMovement(Vector2 direction)
     {
         return new Vector2(Mathf.Sin(direction.y * Time.time) * 2, Mathf.Sin(direction.x * Time.time) * 2);
+    }
+
+    void PlayNextClip()
+    {
+        if (walkSounds.Count == 0)
+        {
+            return;
+        }
+
+        tommyAudio.clip = walkSounds[audioIndex];
+        tommyAudio.Play();
+
+        audioIndex--;
+
+        if(audioIndex <= 0)
+        {
+            audioIndex = walkSounds.Count - 1;
+        }
     }
 }

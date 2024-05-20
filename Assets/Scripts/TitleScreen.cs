@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -24,5 +25,10 @@ public class TitleScreen : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(1);
     }
 }

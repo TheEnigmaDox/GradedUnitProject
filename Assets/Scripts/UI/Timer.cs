@@ -38,7 +38,7 @@ public class Timer : MonoBehaviour
             sceneLoader.LoadNextScene((SceneManager.GetActiveScene().buildIndex + 1));
         }
 
-        if(SceneManager.GetActiveScene().buildIndex == 1)
+        if(SceneManager.GetActiveScene().buildIndex == 2)
         {
             timerBackground.GetComponent<Image>().enabled = false;
             timerText.text = "";
