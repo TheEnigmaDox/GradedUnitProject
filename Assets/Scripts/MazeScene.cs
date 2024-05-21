@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 
 public class MazeScene : MonoBehaviour
 {
@@ -55,6 +57,11 @@ public class MazeScene : MonoBehaviour
         {
             mazeTimer -= Time.deltaTime;
             UpdateTimer(mazeTimer);
+        }
+        else if(mazeTimer <= 0)
+        {
+            stats.survive = false;
+            SceneManager.LoadScene(4);
         }
     }
 
