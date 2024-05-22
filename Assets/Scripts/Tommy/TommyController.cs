@@ -1,33 +1,38 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TommyController : MonoBehaviour
 {
+    // Index for cycling through audio clips
     int audioIndex = 4;
 
+    // Player status flags
     public bool isSwimming = false;
     public bool playerControl = true;
     public bool isDrunk = false;
     public bool onSpeed = false;
     public bool onHeroin = false;
 
+    // Movement speed of the player
     public float moveSpeed = 250f;
 
+    // Timers for different intoxication effects
     public float alcoholTimer;
     public float speedTimer;
     public float heroinTimer;
 
+    // List of walking sound clips
     public List<AudioClip> walkSounds = new List<AudioClip>();
 
+    // Direction of movement and offset when drunk
     [SerializeField] Vector2 direction;
     [SerializeField] Vector2 drunkOffset;
 
+    // Audio source component for playing sounds
     AudioSource tommyAudio;
 
+    // References to other components and scripts
     SceneLoader sceneLoader;
     Rigidbody2D tommyRB;
     Animator tommyAnim;
@@ -35,21 +40,26 @@ public class TommyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tommyRB = GetComponent<Rigidbody2D>();  
+        // Get components attached to the same GameObject
+        tommyRB = GetComponent<Rigidbody2D>();
         tommyAnim = GetComponent<Animator>();
+        tommyAudio = GetComponent<AudioSource>();
+
+        // Find the SceneLoader script in the scene
         sceneLoader = FindObjectOfType<SceneLoader>();
-        tommyAudio = GetComponent<AudioSource>();   
     }
 
     // Update is called once per frame
     void Update()
     {
+        // Handle player input for movement direction
         if (playerControl)
         {
-            direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); 
+            direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         }
 
-        if(direction !=  Vector2.zero)
+        // Animate the character based on movement direction
+        if (direction != Vector2.zero)
         {
             AnimateCharacter();
         }
@@ -58,6 +68,7 @@ public class TommyController : MonoBehaviour
             tommyAnim.SetBool("isMoving", false);
         }
 
+        // Check if the player is in the swimming scene
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             tommyAnim.SetBool("isSwimming", true);
@@ -65,29 +76,33 @@ public class TommyController : MonoBehaviour
         }
     }
 
+    // FixedUpdate is called at a fixed interval and is used for physics calculations
     void FixedUpdate()
     {
         MoveCharacter();
     }
 
+    // Handles the movement and various status effects of the character
     void MoveCharacter()
     {
         AnimateCharacter();
 
-        if(isDrunk)
+        // Handle drunk status
+        if (isDrunk)
         {
-            if(alcoholTimer > 0)
+            if (alcoholTimer > 0)
             {
                 alcoholTimer -= Time.deltaTime;
             }
             else
             {
                 isDrunk = false;
-                drunkOffset = Vector2.zero; 
+                drunkOffset = Vector2.zero;
             }
         }
 
-        if(onSpeed)
+        // Handle speed status
+        if (onSpeed)
         {
             if (speedTimer > 0)
             {
@@ -100,9 +115,10 @@ public class TommyController : MonoBehaviour
             }
         }
 
+        // Handle heroin status
         if (onHeroin)
         {
-            if(heroinTimer > 0)
+            if (heroinTimer > 0)
             {
                 moveSpeed = 150f;
                 heroinTimer -= Time.deltaTime;
@@ -113,14 +129,17 @@ public class TommyController : MonoBehaviour
             }
         }
 
+        // Apply velocity to the Rigidbody2D component based on the direction and speed
         tommyRB.velocity = moveSpeed * Time.deltaTime * (direction.normalized + drunkOffset.normalized);
 
+        // Play walking sound if the player is moving and not swimming
         if (direction != Vector2.zero && !tommyAudio.isPlaying && SceneManager.GetActiveScene().buildIndex != 3)
         {
-            PlayNextClip(); 
+            PlayNextClip();
         }
     }
 
+    // Animates the character based on movement direction and status effects
     void AnimateCharacter()
     {
         if (direction != Vector2.zero && !isDrunk)
@@ -129,7 +148,7 @@ public class TommyController : MonoBehaviour
             tommyAnim.SetFloat("xInput", direction.x);
             tommyAnim.SetFloat("yInput", direction.y);
         }
-        else if(direction == Vector2.zero)
+        else if (direction == Vector2.zero)
         {
             tommyAnim.SetBool("isMoving", false);
         }
@@ -141,17 +160,19 @@ public class TommyController : MonoBehaviour
             tommyAnim.SetBool("isMoving", true);
             drunkOffset = DrunkMovement(direction);
         }
-        else if(direction == Vector2.zero)
+        else if (direction == Vector2.zero)
         {
             tommyAnim.SetBool("isMoving", false);
         }
     }
 
+    // Generates a drunk movement offset based on the direction
     Vector2 DrunkMovement(Vector2 direction)
     {
         return new Vector2(Mathf.Sin(direction.y * Time.time) * 2, Mathf.Sin(direction.x * Time.time) * 2);
     }
 
+    // Plays the next walking sound clip in the list
     void PlayNextClip()
     {
         if (walkSounds.Count == 0)
@@ -164,7 +185,7 @@ public class TommyController : MonoBehaviour
 
         audioIndex--;
 
-        if(audioIndex <= 0)
+        if (audioIndex <= 0)
         {
             audioIndex = walkSounds.Count - 1;
         }
