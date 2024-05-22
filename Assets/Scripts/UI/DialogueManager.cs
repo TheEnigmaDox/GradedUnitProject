@@ -10,7 +10,7 @@ public class DialogueManager : MonoBehaviour
     bool dialogueOpen = false;
 
     // Speed at which the dialogue text is typed out
-    float typeSpeed = 0.05f;
+    float typeSpeed = 0.01f;
 
     // Example question for dialogue
     string question = "Would you like some booze to get you in the vibe!";
@@ -144,7 +144,7 @@ public class DialogueManager : MonoBehaviour
             yesButton.gameObject.SetActive(true);
             noButton.gameObject.SetActive(true);
 
-            Debug.Log("Question logic here");
+            //Debug.Log("Question logic here");
         }
 
         // Dequeue the next sentence and start typing it out
