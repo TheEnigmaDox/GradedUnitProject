@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
+
+//Created by Kyle Sneddon
+/********************************************************************************************/
+
 public class TitleScreen : MonoBehaviour
 {
     // References to UI elements
@@ -28,5 +32,20 @@ public class TitleScreen : MonoBehaviour
     public void LoadNextScene()
     {
         SceneManager.LoadScene(1); // Load the scene with build index 1
+    }
+
+    public void OpenInstructions()
+    {
+        instructionsPanel.gameObject.SetActive(true);
+    }
+
+    public void CloseInstructions()
+    {
+        instructionsPanel.gameObject.SetActive(false);
+    }
+
+    public void ExitApplication()
+    {
+        Application.Quit();
     }
 }
