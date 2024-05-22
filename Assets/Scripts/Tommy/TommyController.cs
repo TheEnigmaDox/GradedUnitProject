@@ -28,6 +28,8 @@ public class TommyController : MonoBehaviour
     // Direction of movement and offset when drunk
     [SerializeField] Vector2 direction;
     [SerializeField] Vector2 drunkOffset;
+    [SerializeField] Vector2 minPos;
+    [SerializeField] Vector2 maxPos;
 
     // Audio source component for playing sounds
     AudioSource tommyAudio;
@@ -52,6 +54,9 @@ public class TommyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.position = new Vector2(Mathf.Clamp(transform.position.x, minPos.x, maxPos.x),
+                Mathf.Clamp(transform.position.y, minPos.y, maxPos.y));
+
         // Handle player input for movement direction
         if (playerControl)
         {

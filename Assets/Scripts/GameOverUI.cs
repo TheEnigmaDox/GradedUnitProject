@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+//THIS SCRIPT WAS CREATED AND IMPLEMENTED BY BATAO
+/**************************************************************************************/
 public class GameOverUI : MonoBehaviour
 {
     // Reference to the TextMeshPro text component for displaying game over message
@@ -46,3 +48,6 @@ public class GameOverUI : MonoBehaviour
         Application.Quit();
     }
 }
+
+/**************************************************************************************/
+//THIS SCRIPT WAS CREATED AND IMPLEMENTED BY BATAO
