@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-//THIS SCRIPT WAS CREATED AND IMPLEMENTED BY BATAO
+//THIS SCRIPT WAS CREATED AND IMPLEMENTED BY BOTAO
 /**************************************************************************************/
 public class GameOverUI : MonoBehaviour
 {
