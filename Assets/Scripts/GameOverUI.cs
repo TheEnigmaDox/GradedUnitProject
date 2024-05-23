@@ -39,6 +39,7 @@ public class GameOverUI : MonoBehaviour
     // Method to load the title scene
     public void LoadTitle()
     {
+        Destroy(FindObjectOfType<Stats>());
         SceneManager.LoadScene(0);
     }
 
